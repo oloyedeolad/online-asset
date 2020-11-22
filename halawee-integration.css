@@ -49,3 +49,55 @@
         }
 
 
+#kspec {
+    background: #FFFFFF !important;
+    border-radius: 10px;
+}
+
+#payForm {
+    border-style: none !important;
+}
+
+#nnnn {
+    background: #2C665D !important;
+    border-radius: 4px !important;
+}
+
+#kcancel {
+    border: 1px solid #EBEBEB;
+    background: #FFFFFF !important;
+    box-sizing: border-box !important;
+    border-radius: 4px !important;
+    color: #2A2A2A !important;
+    margin-right: 1% !important;
+}
+
+#kdownbut {
+    justify-content: end !important;
+}
+
+.kform-group {
+    position: relative !important;
+    min-height: 3.5em !important;
+}
+
+.kform-control {
+    height: 55px !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    background: rgba(255, 187, 255, 0.1) !important;
+    border: 1px solid #FFBBFF !important;
+    box-sizing: border-box !important;
+    border-radius: 5px !important;
+}
+
+.kform-control-label {
+    position: absolute !important;
+    font-size: .8em !important;
+    top: 0 !important;
+    left: 5px !important;
+    font-family: "Space Grotesk"  !important;
+    color: #2A2A2A !important;
+}
+
