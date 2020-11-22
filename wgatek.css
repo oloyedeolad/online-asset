@@ -63,8 +63,10 @@ input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 4px;
     resize: vertical;
+    border: 1px solid #FFBBFF;
+    box-sizing: border-box;
+    border-radius: 5px
 }
 
 label {
@@ -86,19 +88,22 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-.container {
+.k-container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #FFFFFF;
     padding: 20px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-family: "Space Grotesk"
 }
 
-.col-25 {
+.k-col-25 {
     float: left;
     width: 25%;
     margin-top: 6px;
 }
 
-.col-75 {
+.kcol-75 {
     float: left;
     width: 50%;
     margin-top: 6px;
