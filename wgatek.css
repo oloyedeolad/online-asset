@@ -108,3 +108,15 @@ input[type=submit]:hover {
     width: 50%;
     margin-top: 6px;
 }
+
+.k-col-33{
+    float: left;
+    width: 33.3%;
+    margin-top: 6px;
+}
+
+.k-col-50{
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+}
