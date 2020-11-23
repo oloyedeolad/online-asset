@@ -35,7 +35,7 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-.container {
+.kcontainer {
     margin: 15% auto;
     border-radius: 10px;
     background-color: #FFFFFF;
