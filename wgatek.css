@@ -49,28 +49,19 @@
 }
 
 
-.kow:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.kow {
-    width: 100%
-}
-
 * {
     box-sizing: border-box;
 }
 
 input[type=text], select, textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
+    padding-left: 8px;
+    padding-top: 8px;
     resize: vertical;
-    border: 1px solid #FFBBFF;
-    box-sizing: border-box;
-    border-radius: 5px
+    height: 100%;
+    border-radius: 5px;
+    font-family: "Space Grotesk";
+    background: rgba(255, 187, 255, 0.1);
 }
 
 label {
@@ -79,48 +70,139 @@ label {
 }
 
 input[type=submit] {
-    background-color: #4CAF50;
+    background: #2C665D;
     color: white;
-    padding: 12px 20px;
+    padding: 10px 26px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     float: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 input[type=submit]:hover {
     background-color: #45a049;
 }
 
-.k-container {
-    border-radius: 5px;
-    background-color: #FFFFFF;
-    padding: 20px;
-    background: #FFFFFF;
+.container {
+    margin: 15% auto;
     border-radius: 10px;
-    font-family: "Space Grotesk"
+    background-color: #FFFFFF;
+    width: 40%;
+    font-family: "Space Grotesk";
+    border: 1px solid #888;
 }
 
-.k-col-25 {
+.lc-pad {
+    padding-left: 0.5em;
+}
+
+.rt-text {
+    text-align: right;
+}
+
+.fd-container {
+    margin: 10px;
+}
+
+.class-back {
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 26px
+}
+
+.klabel {
+    margin-bottom: -40px;
+    position: absolute;
+    color: #2A2A2A;
+    margin: 8px;
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.ct-text {
+    text-align: center;
+    align-content: center;
+}
+.col-25 {
     float: left;
     width: 25%;
     margin-top: 6px;
 }
+.krow-border {
+    background: #FFFFFF;
+    padding: 8px;
+    box-shadow: 0px 1px 0px #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
+}
 
-.kcol-75 {
+.krow-border-top {
+    background: #FFFFFF;
+    padding: 8px;
+    border-top: 1px solid #EBEBEB;
+}
+.col-75 {
     float: left;
-    width: 50%;
+    width: 75%;
     margin-top: 6px;
 }
 
-.k-col-33{
+.rt-mar {
+    margin-top: 0.6em;
+}
+
+.rt-sm-mar {
+    margin-right: 0.4em;
+}
+
+.col-33 {
     float: left;
-    width: 30%;
+    width: 33%;
+    margin-top: 6px;
+    font-family: "Space Grotesk";
+}
+
+.col-100 {
+    float: left;
+    width: 100%;
     margin-top: 6px;
 }
 
-.k-col-50{
+.col-50 {
     float: left;
-    width: 50%;
+    width: 49%;
     margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.krow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.holder {
+    height: 55px;
+    box-sizing: border-box;
+    background: rgba(255, 187, 255, 0.1);
+    border: 1px solid #FFBBFF;
+    border-radius: 5px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
 }
